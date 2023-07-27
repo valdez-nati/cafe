@@ -49,7 +49,7 @@ div,li {
   align-items: stretch;
 }
 .logo {
-  width: 120px;
+  width: 50px;
   display: flex;
   align-items: center;
 }
@@ -61,13 +61,18 @@ div,li {
 }
 .key {
   height: 500px;
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
   background: center / cover no-repeat url("../images/sample_key.jpg");
   font-family: 'Noto Serif JP', serif;
   font-weight: bold;
 }
-.key h1{
-  font-size: 2.5rem;
-}
+
+
+
+
 .section_title {
     display: flex;
     flex-direction: column;
@@ -93,12 +98,26 @@ div,li {
 
 .key_section_inner{
     display: flex;
-    justify-content: center;
-    align-items: center; 
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    text-align: center;
+    font-size: 10px;
 }
-.contenido {
-    flex: 0 0 60%;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 8fr; /* Dividir el contenedor en dos columnas de igual ancho */
+  gap: 5px; /* Espacio entre las columnas */
 }
+
+.im img {
+  max-width: 100%; /* Asegurarse de que la imagen no supere el ancho del contenedor */
+  width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+}
+
+
+
 .pancake-list {
   list-style: none;
   margin: 0;
@@ -207,3 +226,10 @@ dd {
   margin-bottom: 20px;
 }
 
+.caffee_menu_list_item {
+  width: 49%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 10px;
+}
