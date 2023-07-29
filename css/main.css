@@ -191,7 +191,8 @@ img {
 }
 
 .menu-info {
-  flex-basis: 50%; /* Cada "menu-info" toma el 50% del ancho del cuadro */
+  width: 49%; /* Cada "menu-info" toma el 49% del ancho del cuadro */
+  margin: 0 20px; /* Aplica un margen de 20px a ambos lados del elemento */
   display: flex;
   align-items: center;
 }
@@ -209,7 +210,7 @@ img {
 /* Opcional: Estilos para el texto */
 h2, p {
   margin: 0;
-  width: 80%;
+  width: 60%;
 }
 dl {
   width: 80%;
@@ -220,6 +221,7 @@ dl {
 dt {
   font-weight: bold;
   margin-top: 10px;
+  width: 80px;
 }
 
 dd {
@@ -232,4 +234,8 @@ dd {
   flex-direction: row-reverse;
   align-items: center;
   padding: 10px;
+}
+.copyright {
+  text-align: center;
+  width: 100%; /* Asegura que el párrafo ocupe todo el ancho disponible */
 }
